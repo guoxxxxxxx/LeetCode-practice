@@ -84,4 +84,53 @@ public class Hot150Test {
     }
 
 
+    /**
+     * 134. 加油站
+     */
+    @Test
+    public void Gas_134_Test(){
+        int[] gas = new int[]{5,1,2,3,4};
+        int[] cost = new int[]{4,4,1,5,1};
+        Gas_134 gas134 = new Gas_134();
+        int result = gas134.canCompleteCircuit(gas, cost);
+        System.out.println(result);
+    }
+
+
+    /**
+     * 135. 分发糖果
+     */
+    @Test
+    public void Candy_135_Test(){
+        Candy_135 candy135 = new Candy_135();
+        int[] ratings1 = new int[]{1,0,2};
+        int[] ratings2 = new int[]{1,2,2};
+        int result = candy135.candy(ratings1);
+        System.out.println("result = " + result);
+    }
+
+
+    /**
+     * 42. 接雨水
+     */
+    @Test
+    public void Trap_42_Test(){
+        Trap_42 trap42 = new Trap_42();
+        int[] case1 = new int[]{0,1,0,2,1,0,1,3,2,1,2,1};
+        int result = trap42.trap(case1);
+        System.out.println("result = " + result);
+    }
+
+
+    /**
+     * 13. 罗马数字转整数
+     */
+    @Test
+    public void RomanToInt_13_Test(){
+        RomanToInt_13 romanToInt13 = new RomanToInt_13();
+        String case1 = "D";
+        int result = romanToInt13.romanToInt(case1);
+        System.out.println("result = " + result);
+    }
+
 }
