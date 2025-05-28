@@ -11,6 +11,16 @@ import java.util.Arrays;
 
 public class Hot150Test {
 
+
+    /**
+     * 打印结果
+     * @param result 打印结果
+     */
+    private void println(Object result){
+        System.out.println("result = " + result);
+    }
+
+
     /**
      * 45. 跳跃游戏
      */
@@ -130,6 +140,30 @@ public class Hot150Test {
         RomanToInt_13 romanToInt13 = new RomanToInt_13();
         String case1 = "D";
         int result = romanToInt13.romanToInt(case1);
+        System.out.println("result = " + result);
+    }
+
+
+    /**
+     * 58. 最后一个单词的长度
+     */
+    @Test
+    public void LengthOfLastWord_58_Test(){
+        LengthOfLastWord_58 lengthOfLastWord58 = new LengthOfLastWord_58();
+        String case1 = "   fly me   to   the moon  ";
+        int result = lengthOfLastWord58.lengthOfLastWord(case1);
+        System.out.println("result = " + result);
+    }
+
+
+    /**
+     * 14. 最长公共前缀
+     */
+    @Test
+    public void longestCommonPrefix_14(){
+        LongestCommonPrefix_14 longestCommonPrefix14 = new LongestCommonPrefix_14();
+        String[] StrList = {"flower","flow","flight"};
+        String result = longestCommonPrefix14.longestCommonPrefix(StrList);
         System.out.println("result = " + result);
     }
 
