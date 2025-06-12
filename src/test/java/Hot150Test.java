@@ -167,4 +167,22 @@ public class Hot150Test {
         System.out.println("result = " + result);
     }
 
+
+    /**
+     * 28. 找出字符串中第一个匹配项的下标
+     */
+    @Test
+    public void strStr_28(){
+        StrStr_28 strStr28 = new StrStr_28();
+        String case1_h = "mississippi";
+        String case1_n = "issip";
+//
+//        String case1_h = "hello";
+//        String case1_n = "ll";
+
+        int i = strStr28.strStr(case1_h, case1_n);
+        println(i);
+    }
+
+
 }
