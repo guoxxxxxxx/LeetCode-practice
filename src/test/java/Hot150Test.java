@@ -1,6 +1,8 @@
 import org.junit.Test;
 
 import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
 
 /**
  * @Time: 2025/3/6 21:50
@@ -176,13 +178,35 @@ public class Hot150Test {
         StrStr_28 strStr28 = new StrStr_28();
         String case1_h = "mississippi";
         String case1_n = "issip";
-//
-//        String case1_h = "hello";
-//        String case1_n = "ll";
-
         int i = strStr28.strStr(case1_h, case1_n);
-        println(i);
+        println(Optional.of(i));
     }
 
 
+    /**
+     * 68. 文本左右对齐
+     */
+    @Test
+    public void fullJustify_68(){
+        FullJustify_68 fullJustify68 = new FullJustify_68();
+//        String[] case1 = {"This", "is", "an", "example", "of", "text", "justification."};
+        String[] case2 = {"What","must","be","acknowledgment","shall","be"};
+        int maxWidth = 16;
+        List<String> result = fullJustify68.fullJustify(case2, maxWidth);
+        for (String e : result){
+            System.out.println(e);
+        }
+    }
+
+
+    /**
+     * 125. 验证回文串
+     */
+    @Test
+    public void isPalindrome_125(){
+        IsPalindrome_125 isPalindrome125 = new IsPalindrome_125();
+        String case1 = "A man, a plan, a canal: Panama";
+        boolean result = isPalindrome125.isPalindrome(case1);
+        System.out.println(result);
+    }
 }
