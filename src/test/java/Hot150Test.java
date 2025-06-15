@@ -234,4 +234,30 @@ public class Hot150Test {
         System.out.println(result);
     }
 
+    /**
+     * 15. 三数之和
+     */
+    @Test
+    public void threeSum_15(){
+        ThreeSum_15 threeSum15 = new ThreeSum_15();
+//        int[] case1 = new int[]{2,-3,0,-2,-5,-5,-4,1,2,-2,2,0,2,-4,5,5,-10};
+        int[] case1 = new int[]{-1,0,1,2,-1,-4};
+        List<List<Integer>> lists = threeSum15.threeSum(case1);
+        for (List<Integer> e : lists){
+            System.out.println(e);
+        }
+    }
+
+    /**
+     * 209. 长度最小的子数组
+     */
+    @Test
+    public void minSubArrayLen_209(){
+        MinSubArrayLen_209 minSubArrayLen209 = new MinSubArrayLen_209();
+        int[] nums = new int[]{2,3,1,2,4,3};
+        int target = 7;
+        int result = minSubArrayLen209.minSubArrayLen(target, nums);
+        System.out.println(result);
+    }
+
 }
