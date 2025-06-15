@@ -209,4 +209,29 @@ public class Hot150Test {
         boolean result = isPalindrome125.isPalindrome(case1);
         System.out.println(result);
     }
+
+    /**
+     * 6. Z 字形变换
+     */
+    @Test
+    public void zConvert(){
+        ZConvert_6 zConvert6 = new ZConvert_6();
+        String case1 = "AB";
+        String result = zConvert6.convert(case1, 1);
+        println(result);
+    }
+
+
+    /**
+     * 392. 判断子序列
+     */
+    @Test
+    public void isSubsequence_392(){
+        IsSubsequence_392 isSubsequence392 = new IsSubsequence_392();
+        String s = "abc";
+        String t = "ahbgdc";
+        boolean result = isSubsequence392.isSubsequence(s, t);
+        System.out.println(result);
+    }
+
 }
