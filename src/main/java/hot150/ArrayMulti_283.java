@@ -1,3 +1,5 @@
+package hot150;
+
 public class ArrayMulti_283 {
     public int[] productExceptSelf(int[] nums) {
         int[] leftArray = new int[nums.length];

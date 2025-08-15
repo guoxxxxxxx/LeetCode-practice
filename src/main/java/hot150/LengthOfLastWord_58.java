@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
+package hot150;
 
 public class LengthOfLastWord_58 {
 

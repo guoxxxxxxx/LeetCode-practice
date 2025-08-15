@@ -1,10 +1,12 @@
+package hot150;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * @Time: 2025/8/7 17:39
  * @Author: guo_x
- * @File: Insert_57
+ * @File: hot150.Insert_57
  * @Description:
  */
 public class Insert_57 {

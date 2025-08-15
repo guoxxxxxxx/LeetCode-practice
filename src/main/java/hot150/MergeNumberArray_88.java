@@ -1,7 +1,9 @@
+package hot150;
+
 /**
  * @Time: 2025/3/6 21:48
  * @Author: guoxun
- * @File: MergeNumberArray_88
+ * @File: hot150.MergeNumberArray_88
  * @Description:
  */
 

@@ -1,9 +1,11 @@
+package hot150;
+
 import java.util.HashMap;
 
 /**
  * @Time: 2025/7/4 19:39
  * @Author: guo_x
- * @File: MinWindow_76
+ * @File: hot150.MinWindow_76
  * @Description:
  */
 public class MinWindow_76 {

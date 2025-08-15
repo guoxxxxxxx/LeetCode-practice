@@ -1,3 +1,5 @@
+package hot150;
+
 public class ZConvert_6 {
 
     public String convert(String s, int numRows) {

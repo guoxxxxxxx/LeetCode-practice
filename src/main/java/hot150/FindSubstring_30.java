@@ -1,9 +1,11 @@
+package hot150;
+
 import java.util.*;
 
 /**
  * @Time: 2025/7/4 18:36
  * @Author: guo_x
- * @File: FindSubstring_30
+ * @File: hot150.FindSubstring_30
  * @Description: 30. 串联所有单词的子串
  */
 public class FindSubstring_30 {

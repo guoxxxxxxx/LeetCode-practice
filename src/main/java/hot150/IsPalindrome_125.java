@@ -1,7 +1,9 @@
+package hot150;
+
 /**
  * @Time: 2025/6/14 18:22
  * @Author: guo_x
- * @File: IsPalindrome_125
+ * @File: hot150.IsPalindrome_125
  * @Description:
  */
 public class IsPalindrome_125 {

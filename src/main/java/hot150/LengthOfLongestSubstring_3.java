@@ -1,10 +1,12 @@
+package hot150;
+
 import java.util.HashSet;
 import java.util.Set;
 
 /**
  * @Time: 2025/6/16 21:17
  * @Author: guo_x
- * @File: LengthOfLongestSubstring_3
+ * @File: hot150.LengthOfLongestSubstring_3
  * @Description: 3. 无重复字符的最长子串
  */
 public class LengthOfLongestSubstring_3 {

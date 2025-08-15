@@ -1,3 +1,5 @@
+package hot150;
+
 public class HIndex_274 {
 
     public int hIndex(int[] citations) {

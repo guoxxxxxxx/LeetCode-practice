@@ -1,9 +1,11 @@
+package hot150;
+
 import java.util.HashMap;
 
 /**
  * @Time: 2025/8/1 17:25
  * @Author: guo_x
- * @File: CanConstruct_383
+ * @File: hot150.CanConstruct_383
  * @Description:
  */
 public class CanConstruct_383 {

@@ -1,3 +1,5 @@
+package hot150;
+
 public class Gas_134 {
 
     /**

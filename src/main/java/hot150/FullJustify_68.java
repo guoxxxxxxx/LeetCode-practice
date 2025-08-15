@@ -1,10 +1,12 @@
+package hot150;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * @Time: 2025/6/14 17:42
  * @Author: guo_x
- * @File: FullJustify_68
+ * @File: hot150.FullJustify_68
  * @Description:
  */
 

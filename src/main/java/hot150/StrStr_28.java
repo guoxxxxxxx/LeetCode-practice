@@ -1,3 +1,5 @@
+package hot150;
+
 public class StrStr_28 {
 
     public int strStr(String haystack, String needle) {

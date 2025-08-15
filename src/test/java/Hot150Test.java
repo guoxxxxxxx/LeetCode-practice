@@ -1,4 +1,7 @@
+import construct.LinkListMethod;
+import hot150.*;
 import org.junit.Test;
+import structure.ListNode;
 
 import java.util.Arrays;
 import java.util.List;
@@ -260,4 +263,79 @@ public class Hot150Test {
         System.out.println(result);
     }
 
+
+    /**
+     * 3. 无重复字符的最长子串
+     */
+    @Test
+    public void lengthOfLongestSubstring_3(){
+        LengthOfLongestSubstring_3 lengthOfLongestSubstring3 = new LengthOfLongestSubstring_3();
+        String case1 = "abcabcbb";
+        int result = lengthOfLongestSubstring3.lengthOfLongestSubstring(case1);
+        System.out.println(result);
+    }
+
+    /**
+     * 30. 串联所有单词的子串
+     */
+    @Test
+    public void findSubstring_30(){
+        FindSubstring_30 findSubstring30 = new FindSubstring_30();
+        String s = "barfoothefoobarman";
+        String[] words = {"foo","bar"};
+        List<Integer> result = findSubstring30.findSubstring(s, words);
+        System.out.println(result);
+    }
+
+
+    /**
+     * 54. 螺旋矩阵
+     */
+    @Test
+    public void spiralOrder_54(){
+        SpiralOrder_54 spiralOrder54 = new SpiralOrder_54();
+        int[][] test1 = {{1,2,3,4},{5,6,7,8},{9,10,11,12}};
+        List<Integer> result = spiralOrder54.spiralOrder(test1);
+        System.out.println(result);
+    }
+
+
+    /**
+     * 57. 插入区间
+     */
+    @Test
+    public void insert_57(){
+        int[][] intervals = new int[][]{{23,25},{30,34},{41,43}};
+        int[] newIntervals = new int[]{29,32};
+        Insert_57 insert57 = new Insert_57();
+        int[][] result = insert57.insert(intervals, newIntervals);
+        System.out.println(Arrays.deepToString(result));
+    }
+
+
+    /**
+     * 92. 反转链表 II
+     */
+    @Test
+    public void reverseBetween_92(){
+        int[] elements = new int[]{1,2,3,4,5};
+        ListNode head = LinkListMethod.constructListNode(elements);
+        ReverseBetween_92 reverseBetween92 = new ReverseBetween_92();
+        ListNode listNode = reverseBetween92.reverseBetween(head, 1, 2);
+        listNode.show();
+    }
+
+
+    /**
+     * 25. K 个一组翻转链表
+     */
+    @Test
+    public void reverseKGroup_25(){
+        int[] elements = new int[]{1,2,3,4,5};
+
+        ListNode listNode = LinkListMethod.constructListNode(elements);
+        ReverseKGroup_25 reverseKGroup25 = new ReverseKGroup_25();
+        ListNode result = reverseKGroup25.reverseKGroup(listNode, 2);
+        LinkListMethod.print(result);
+    }
 }

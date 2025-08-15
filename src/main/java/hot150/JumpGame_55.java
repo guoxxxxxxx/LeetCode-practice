@@ -1,7 +1,9 @@
+package hot150;
+
 /**
  * @Time: 2025/4/11 10:59
  * @Author: guoxun
- * @File: JumpGame_55
+ * @File: hot150.JumpGame_55
  * @Description:
  */
 
