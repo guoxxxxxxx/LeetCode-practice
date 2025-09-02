@@ -338,4 +338,40 @@ public class Hot150Test {
         ListNode result = reverseKGroup25.reverseKGroup(listNode, 2);
         LinkListMethod.print(result);
     }
+
+
+    /**
+     * 146. LRU缓存
+     */
+    @Test
+    public void LRUCacheTest_146(){
+        String[] operator = new String[]{"LRUCache","put","put","put","put","get","get","get","get","put","get","get","get","get","get"};
+        String[] origin_data = "[[3],[1,1],[2,2],[3,3],[4,4],[4],[3],[2],[1],[5,5],[1],[2],[3],[4],[5]]".replace("[", "").split("],");
+        LRUCache_146 lruCache146 = null;
+        for(int i=0; i<operator.length; i++) {
+            String[] data = origin_data[i].replace("]", "").split(",");
+            if (operator[i].equals("LRUCache")){
+                lruCache146 = new LRUCache_146(Integer.parseInt(data[0]));
+            }
+            else if (operator[i].equals("get")){
+                System.out.println(lruCache146.get(Integer.parseInt(data[0])));
+            }
+            else if (operator[i].equals("put")){
+                lruCache146.put(Integer.parseInt(data[0]), Integer.parseInt(data[1]));
+            }
+        }
+    }
+
+
+    /**
+     * 39. 组合总和
+     */
+    @Test
+    public void combinationSum_39(){
+        CombinationSum_39 combinationSum39 = new CombinationSum_39();
+        int[] candidates = {2,3,6,7};
+        int target = 7;
+        List<List<Integer>> lists = combinationSum39.combinationSum(candidates, target);
+        System.out.println(lists);
+    }
 }
