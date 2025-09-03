@@ -374,4 +374,19 @@ public class Hot150Test {
         List<List<Integer>> lists = combinationSum39.combinationSum(candidates, target);
         System.out.println(lists);
     }
+
+
+    /**
+     * 79. 单词搜索
+     */
+    @Test
+    public void exist_79(){
+
+        char[][] board = {{'A','B','C','E'}, {'S','F','E','S'}, {'A','D','E','E'}};
+        String word = "ABCESEEEFS";
+
+        Exist_79 exist79 = new Exist_79();
+        boolean result = exist79.exist(board, word);
+        System.out.println(result);
+    }
 }
