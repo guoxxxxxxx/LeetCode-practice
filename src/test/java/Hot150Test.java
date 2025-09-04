@@ -389,4 +389,24 @@ public class Hot150Test {
         boolean result = exist79.exist(board, word);
         System.out.println(result);
     }
+
+
+    /**
+     * 427. 建立四叉树
+     */
+    @Test
+    public void construct_427(){
+        Construct_427 construct427 = new Construct_427();
+        int[][] grid = {
+                {1,1,1,1,0,0,0,0},
+                {1,1,1,1,0,0,0,0},
+                {1,1,1,1,1,1,1,1},
+                {1,1,1,1,1,1,1,1},
+                {1,1,1,1,0,0,0,0},
+                {1,1,1,1,0,0,0,0},
+                {1,1,1,1,0,0,0,0},
+                {1,1,1,1,0,0,0,0}};
+        Construct_427.Node construct = construct427.construct(grid);
+        System.out.println(construct);
+    }
 }
