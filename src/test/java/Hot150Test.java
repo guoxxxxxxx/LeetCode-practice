@@ -409,4 +409,31 @@ public class Hot150Test {
         Construct_427.Node construct = construct427.construct(grid);
         System.out.println(construct);
     }
+
+
+    /**
+     * 33. 搜索旋转排序数组
+     */
+    @Test
+    public void search33(){
+        int[] nums = {5,1,2,3,4};
+        int target = 1;
+
+        Search_33 search33 = new Search_33();
+        int search = search33.search(nums, target);
+        System.out.println(search);
+    }
+
+
+    /**
+     * 215. 数组中的第K个最大元素
+     */
+    @Test
+    public void findKthLargest215(){
+        int[] nums = {3,2,3,1,2,4,5,5,6};
+        int k = 4;
+        FindKthLargest_215 findKthLargest215 = new FindKthLargest_215();
+        int kthLargest = findKthLargest215.findKthLargest(nums, k);
+        System.out.println(kthLargest);
+    }
 }
