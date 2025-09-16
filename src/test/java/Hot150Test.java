@@ -436,4 +436,27 @@ public class Hot150Test {
         int kthLargest = findKthLargest215.findKthLargest(nums, k);
         System.out.println(kthLargest);
     }
+
+
+    /**
+     * 295. 数据流的中位数
+     */
+    @Test
+    public void medianFinder295(){
+        String[] operate = {"MedianFinder","addNum","addNum","findMedian","addNum","findMedian"};
+        String data = "[[],[1],[2],[],[3],[]]";
+        String[] split = data.replaceAll("[\\[\\]]", "").split(",");
+        MedianFinder_295 medianFinder295 = new MedianFinder_295();
+        for(int i=0; i<operate.length; i++){
+            if(operate[i].equals("MedianFinder")){
+                continue;
+            }
+            else if(operate[i].equals("addNum")){
+                medianFinder295.addNum(Integer.parseInt(split[i]));
+            }
+            else {
+                System.out.println(medianFinder295.findMedian());
+            }
+        }
+    }
 }
