@@ -29,14 +29,17 @@ public class DemoTest {
         stack.isEmpty();
     }
 
+    static class Node{
+        int val;
+        Node(){};
+        Node(int v){
+            val = v;
+        }
+    };
 
     @Test
     public void queueTest(){
-        StringBuilder sb = new StringBuilder();
-        String s = "/123//...///232//123";
-        String[] split = s.split("/+");
-        System.out.println(Arrays.toString(split));
-        List<Integer> list = new ArrayList<>();
-        
+        List<Node> temp = new ArrayList<>();
+        temp.sort((a,b) -> b.val - a.val);
     }
 }

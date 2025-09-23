@@ -459,4 +459,42 @@ public class Hot150Test {
             }
         }
     }
+
+
+    /**
+     * 67. 二进制求和
+     */
+    @Test
+    public void addBinary67(){
+        String a = "1010";
+        String b = "1011";
+        AddBinary67 addBinary67 = new AddBinary67();
+        String result = addBinary67.addBinary(a, b);
+        System.out.println(result);
+    }
+
+
+    /**
+     * 190. 颠倒二进制位
+     */
+    @Test
+    public void reverseBinary190(){
+        int n = 43261596;
+        ReverseBinary190 reverseBinary190 = new ReverseBinary190();
+        int result = reverseBinary190.reverseBits(n);
+        System.out.println(result);
+    }
+
+
+    /**
+     * 149. 直线上最多的点数
+     */
+    @Test
+    public void maxPoints149(){
+        int[][] points = {{9,-25},{-4,1},{-1,5},{-7,7}};
+        MaxPoints149 maxPoints149 = new MaxPoints149();
+        int result = maxPoints149.maxPoints(points);
+        System.out.println(result);
+
+    }
 }
