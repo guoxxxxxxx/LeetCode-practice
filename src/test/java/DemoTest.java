@@ -13,20 +13,20 @@ public class DemoTest {
 
     @Test
     public void test(){
-        int[][] array = new int[][]{{3,2}, {1,2}, {4,2}};
-        Arrays.sort(array, (e1, e2) -> {
-            return e2[0] - e1[0];
-        });
-        List<Integer> temp = new ArrayList<>();
-        System.out.println(Arrays.deepToString(array));
+        int i = 1;
+        System.out.println(1<<2);
     }
 
 
     @Test
     public void stackTest(){
-        Stack<Character> stack = new Stack<>();
-        stack.push('1');
-        stack.isEmpty();
+        TreeMap<Integer, Long> treeMap = new TreeMap<>((o1, o2) -> o2 - o1);
+        treeMap.put(10, 200L);
+        treeMap.put(8, 22L);
+        treeMap.subMap(1, 2).keySet();
+        for (int e : treeMap.keySet()){
+            System.out.println(treeMap.get(e));
+        }
     }
 
     static class Node{

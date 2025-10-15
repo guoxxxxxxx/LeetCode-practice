@@ -2,10 +2,9 @@ import construct.LinkListMethod;
 import hot150.*;
 import org.junit.Test;
 import structure.ListNode;
+import utils.LeetCodeUtils;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 /**
  * @Time: 2025/3/6 21:50
@@ -15,6 +14,14 @@ import java.util.Optional;
  */
 
 public class Hot150Test {
+
+
+    @Test
+    public void test(){
+        ArrayList<Integer> integers = new ArrayList<>(19);
+        Collections.fill(integers, 10);
+        System.out.println(integers);
+    }
 
 
     /**
@@ -496,5 +503,96 @@ public class Hot150Test {
         int result = maxPoints149.maxPoints(points);
         System.out.println(result);
 
+    }
+
+
+    /**
+     * 139. 单词拆分
+     */
+    @Test
+    public void wordBreak139(){
+        String s = "leetcode";
+        String[] list = {"leet", "code"};
+        List<String> wordDict = Arrays.asList(list);
+        WordBreak139 wordBreak139 = new WordBreak139();
+        boolean b = wordBreak139.wordBreak(s, wordDict);
+        System.out.println(b);
+    }
+
+
+    /**
+     * 64. 最小路径和
+     */
+    @Test
+    public void minPathSum64(){
+        String s = "[[1,2,3],[4,5,6]]";
+        int[][] grid = LeetCodeUtils.convertString2Array2D(s);
+        MinPathSum64 minPathSum64 = new MinPathSum64();
+        int result = minPathSum64.minPathSum(grid);
+        System.out.println(result);
+    }
+
+
+    /**
+     * 5. 最长回文子串
+     */
+    @Test
+    public void longestPalindrome5(){
+        String s = "aaaa";
+        LongestPalindrome5 longestPalindrome5 = new LongestPalindrome5();
+        String s1 = longestPalindrome5.longestPalindrome(s);
+        System.out.println(s1);
+    }
+
+
+    /**
+     * 97. 交错字符串
+     */
+    @Test
+    public void isInterleave97(){
+        String s1 = "aabcc";
+        String s2 = "dbbca";
+        String s3 = "aadbbcbcac";
+        IsInterleave97 isInterleave97 = new IsInterleave97();
+        boolean interleave = isInterleave97.isInterleave(s1, s2, s3);
+        System.out.println(interleave);
+    }
+
+
+    /**
+     * 224. 基本计算器
+     */
+    @Test
+    public void calculate224(){
+        String s = "1-(     -2)";
+        Calculate224 calculate224 = new Calculate224();
+        int calculate = calculate224.calculate(s);
+        System.out.println(calculate);
+    }
+
+
+    /**
+     * 438. 找到字符串中所有字母异位词
+     */
+    @Test
+    public void findAnagrams438(){
+        String s = "cbaebabacd";
+        String p = "abc";
+        FindAnagrams438 findAnagrams438 = new FindAnagrams438();
+        List<Integer> anagrams = findAnagrams438.findAnagrams(s, p);
+        System.out.println(anagrams);
+    }
+
+
+    /**
+     * 347. 前 K 个高频元素
+     */
+    @Test
+    public void topKFrequent347(){
+        int[] nums = {1, 1};
+        int k = 1;
+        TopKFrequent347 topKFrequent347 = new TopKFrequent347();
+        int[] result = topKFrequent347.topKFrequent(nums, k);
+        System.out.println(Arrays.toString(result));
     }
 }
