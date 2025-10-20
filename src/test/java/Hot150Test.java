@@ -576,8 +576,8 @@ public class Hot150Test {
      */
     @Test
     public void findAnagrams438(){
-        String s = "cbaebabacd";
-        String p = "abc";
+        String s = "baa";
+        String p = "aa";
         FindAnagrams438 findAnagrams438 = new FindAnagrams438();
         List<Integer> anagrams = findAnagrams438.findAnagrams(s, p);
         System.out.println(anagrams);
@@ -594,5 +594,18 @@ public class Hot150Test {
         TopKFrequent347 topKFrequent347 = new TopKFrequent347();
         int[] result = topKFrequent347.topKFrequent(nums, k);
         System.out.println(Arrays.toString(result));
+    }
+
+
+    /**
+     * 560. 和为 K 的子数组
+     */
+    @Test
+    public void subarraySum(){
+        int[] nums = {1, 1, 1};
+        int k = 2;
+        SubarraySum560 subarraySum560 = new SubarraySum560();
+        int result = subarraySum560.subarraySum(nums, k);
+        System.out.println(result);
     }
 }
